@@ -13,18 +13,6 @@ const images = [
   },
 ];
 const listOfGalleryEl = document.querySelector('.gallery');
-// const makeGallery = function () {
-//   let imgItem = '';
-//   for (const image of images) {
-//     imgItem = image;
-//     listOfGalleryEl.insertAdjacentHTML(
-//       'beforebegin',
-//       `<li><img src=${imgItem.url} alt=${imgItem.alt}></li>`
-//     );
-//   }
-// };
-// console.log(makeGallery());
-
 const murkupGallery = images.map(({ url, alt }) => `<li><img src=${url} alt=${alt}></li>`);
 console.log(murkupGallery);
 listOfGalleryEl.insertAdjacentHTML('beforebegin', murkupGallery);
